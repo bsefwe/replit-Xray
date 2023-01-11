@@ -1,7 +1,7 @@
 log=https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html
 
 mkdir -p main/page/
-curl  "https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html" -o main/page/index.html
+curl  "$log" -o main/page/index.html
 
 chmod +x ./main/caddy
 ./main/caddy start
