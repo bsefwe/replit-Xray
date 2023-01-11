@@ -1,4 +1,5 @@
 > 提醒： 滥用可能导致账户被BAN！！！ 
+官网：https://replit.com
 ## 概述
 
 用于在 replit中部署Xry+caddy通过ws传输的vmess vless协议,客户端务必使用TLS连接
