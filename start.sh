@@ -16,13 +16,13 @@ echo '
                 "decryption": "none",
                 "fallbacks": [
                     {
-                        "path": "/api-vless",
+                        "path": "/'$UUID'-vless",
                         "dest": 4001
                     },{
-                        "path": "/api-trojan",
+                        "path": "/'$UUID'-trojan",
                         "dest": 4002
                     },{
-                        "path": "/api-vmess",
+                        "path": "/'$UUID'-vmess",
                         "dest": 4003
                     }
                 ]
@@ -46,7 +46,7 @@ echo '
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/api-vless"
+                    "path": "/'$UUID'-vless"
                 }
             }
         },{
@@ -64,7 +64,7 @@ echo '
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/api-trojan"
+                    "path": "/'$UUID'-trojan"
                 }
             }
         },{
@@ -82,7 +82,7 @@ echo '
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/api-vmess"
+                    "path": "/'$UUID'-vmess"
                 }
             }
         }
