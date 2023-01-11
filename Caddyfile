@@ -3,7 +3,7 @@
 }
 :{$PORT} {
 	encode zstd gzip
-	@path path {/api-vless} {/api-trojan} {/api-vmess}
+	@path path {/{$UUID}-vless} {/{$UUID}D-trojan} {/{$UUID}-vmess}
 	handle @path {
 		reverse_proxy :4000 {
 			@error status 5xx 4xx
